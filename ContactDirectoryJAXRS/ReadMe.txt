@@ -11,5 +11,7 @@ sadece gittigin link dosyadaki ilgili user a ait bilgileri getiriyor.
 6. aslinda bunu bi ara konusalim burdan yazmak ta zor...
 simdilik bu kadar :P
 
+1. Project->Clean->select your project (here ContactDirectoryJAXRS) to clean.
+2. ReadXMLFile.java; change file path accorging to your local path.
 
 http://localhost:8080/ContactDirectoryJAXRS/rest/contacts/1
