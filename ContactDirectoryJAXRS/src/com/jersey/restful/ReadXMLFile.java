@@ -10,15 +10,18 @@ import java.io.File;
  
 public class ReadXMLFile {
 	
-  private Contact contact;	
+  private ContactDTO contact;	
 	
-  public Contact getContactDetails(String id){
+  public ContactDTO getContactDetails(String id){
 	  
-	  contact = new Contact();
+	  contact = new ContactDTO();
 	
 	  try {
 		  
-			File fXmlFile = new File("/Users/Chatitze/Documents/workspace/REST1/ContactDirectoryJAXRS/src/contacts.xml");
+			//File fXmlFile = new File("/Users/Chatitze/Documents/workspace/REST1/ContactDirectoryJAXRS/src/contacts.xml");
+			
+			File fXmlFile = new File("C:\\olmdev\\git\\ContactDirectory\\ContactDirectoryJAXRS\\src\\contacts.xml");
+			
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);

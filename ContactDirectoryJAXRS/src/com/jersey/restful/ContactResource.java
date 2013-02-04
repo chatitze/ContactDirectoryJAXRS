@@ -13,7 +13,7 @@ public class ContactResource {
 	// Return contact details to the user in the browser
 	  @GET @Path("{id}")
 	  @Produces(MediaType.TEXT_XML)
-	  public Contact findByIdHTML(@PathParam("id") String id) {
+	  public ContactDTO findByIdHTML(@PathParam("id") String id) {
 		  ContactDAO dao = new ContactDAO();
 		  return dao.findById(Long.parseLong(id));
 	  }
@@ -21,7 +21,7 @@ public class ContactResource {
 	// Return contact details for applications
 	@GET @Path("{id}")
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-	public Contact findById(@PathParam("id") String id) {
+	public ContactDTO findById(@PathParam("id") String id) {
 		ContactDAO dao = new ContactDAO();
 		return dao.findById(Long.parseLong(id));
 	}

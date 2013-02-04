@@ -13,9 +13,9 @@ import java.util.List;
  */
 public class ContactDAO {
 
-    public Contact findById(Long id) {
+    public ContactDTO findById(Long id) {
     	
-    	Contact contact = null;
+    	ContactDTO contact = null;
     	contact = new ReadXMLFile().getContactDetails(id.toString());
         return contact;
     }

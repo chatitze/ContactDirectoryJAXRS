@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 
 @XmlRootElement
-public class Contact {
+public class ContactDTO {
 
     private Long id;
 
@@ -33,7 +33,7 @@ public class Contact {
 
 	private String facebook;
 	
-	public Contact() {
+	public ContactDTO() {
 
     }
 	
